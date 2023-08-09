@@ -37,11 +37,14 @@
 **Лучшие модели**: 
 - GradientBoostingClassifier(n_estimators=159, criterion='friedman_mse', max_features='auto') с включением категориальных переменных, без
 полиномиальных признаков.
+
 ROC-AUC на кросс-валидации: 0.912
 - SGDClassifier(loss='log', penalty='elasticnet') с включением категориальных переменных, без
 полиномиальных признаков.
+
  ROC-AUC на кросс-валидации: 0.899
 - RandomForestClassifier(n_estimators=53, criterion='entropy', max_features ='sqrt') с включением категориальных переменных, без
 полиномиальных признаков.
+
  ROC-AUC на кросс-валидации: 0.894
 
