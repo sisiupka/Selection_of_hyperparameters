@@ -1,9 +1,23 @@
 # Selection of hyperparameters for machine learning models
 
 ## Описание задачи
-Датасет - https://www.kaggle.com/datasets/ellanihill/ab-test-data-online-store
+Предлагается решить задачу бинарной классификации, а именно построить алгоритм, определяющий превысит ли средний заработок человека порог $50k. Каждый объект выборки — человек, для которого известны следующие признаки:
+- age
+- workclass
+- fnlwgt
+- education
+- education-num
+- marital-status
+- occupation
+- relationship
+- race
+- sex
+- capital-gain
+- capital-loss
+- hours-per-week
+Более подробно про признаки можно почитать [здесь](http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.names). Целевой признак записан в переменной >50K,<=50K.
 
-Собраны результаты двух А-Б-тестирований (recommender_system_test и interface_eu_test) онлайн магазина. Group A является treatment-группой, Group B - control-группой. Необходимо интерпретировать результаты А-Б-тестирования.
+Мы будем оценивать качество моделей с помощью метрики AUC-ROC.
 ## Этапы работы
 - Проверил разбиение тестов на наличие ошибок и репрезентативность выборок
 - Описал и визуализировал распределение основных численных и категориальных переменных
